@@ -118,6 +118,17 @@ class Logic(QMainWindow, Ui_MainWindow):
         logo picture and title
         :param channel: Number of channel being changed to
         '''
+
+        '''
+        Much of the code in this method is related to loading a graphics scene and
+        graphics views. As we never covered this in class, I learned how to do this
+        with the help of some Google searches. The Google AI provided a basis for
+        the code, but did not fully function. I resorted to the PyQt6 Documentation
+        and an assortment of old posts on online forums to learn how to use these
+        functions and implement them properly. Ultimately, none of the sources I
+        found fully resolved my issues, and I figured out my own solution to solve
+        my problems so my code should be somewhat original.
+        '''
         self.scene = QGraphicsScene()
 
         if channel == 0:
@@ -154,6 +165,16 @@ class Logic(QMainWindow, Ui_MainWindow):
         Method to clear the logo and delete the
         scene so a new logo can be placed in
         :param channel: Number of channel be changed from
+        '''
+
+        '''
+        I learned how to use the functions in this method properly by the same
+        means as in the set_logo() method, so refer to the comment there to
+        see where some of this code came from. This method is essentially my
+        solution to an issue I was having with the images not loading properly,
+        and I believe the code to be original, because I got the idea of deleting
+        the scene myself and only looked up how to do that with PyQt6. I did not
+        "take" the code from anywhere specific.
         '''
         self.scene.clear()
         if channel == 0:
