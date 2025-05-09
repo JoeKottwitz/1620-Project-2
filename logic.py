@@ -1,6 +1,5 @@
 from PyQt6.QtWidgets import *
 from PyQt6.QtGui import QPixmap
-from PyQt6.QtCore import Qt
 from gui import *
 from television import Television
 
@@ -17,7 +16,6 @@ class Logic(QMainWindow, Ui_MainWindow):
         super().__init__()
         self.setupUi(self)
 
-        #self.scene = QGraphicsScene()
         self.cbs = QPixmap('logo_cbs.png')
         self.espn = QPixmap('logo_espn.png')
         self.nbc = QPixmap('logo_nbc.png')
